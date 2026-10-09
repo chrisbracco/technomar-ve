@@ -47,28 +47,20 @@ Servir de base para construir con Claude una **landing page tipo entrada de e-co
 
 ## Cómo correrlo (v1)
 
-Sitio 100% estático. El navegador bloquea `fetch` de JSON con doble clic, así que sírvelo localmente:
+Sitio 100% estático. Publicado en GitHub Pages: https://chrisbracco.github.io/technomar-ve/ (panel: `/admin.html`).
+En local, sírvelo con `python3 -m http.server 8000` (con doble clic el navegador bloquea la lectura del JSON).
 
-```sh
-python3 -m http.server 8000   # y abre http://localhost:8000
-```
+- **Tienda (`index.html`):** contenido real de grupotechnomar.com — logo, fotos de las 5 sedes, 171 productos con fotos, variantes y colores, Krece/Cashea, servicio técnico, aliado HANK, iPhone Duo. Más: carrito multi-producto, registro/login, checkout con delivery o retiro, ticket y aviso interno por pedido.
+- **Precios en 4 modalidades** (como el sitio actual): divisas, Bs a tasa BCV (precio × 1,22 × tasa), Cashea (`precioCashea` del catálogo) y Krece (precio × 1,22), con inicial y cuotas por nivel.
+- **Panel (`admin.html`)** — demo `admin@technomar.ve` / `technomar2026`: resumen por sede y forma de pago, pedidos con flujo de estados y cambio de sede, venta en sede, inventario 171 × 5 sedes con buscador, clientes, **tasa BCV del día** editable, ticket imprimible.
+- **Datos:** `data/productos.json` (catálogo, sedes, zonas → sede, niveles de financiamiento). Imágenes optimizadas a WebP en `assets/img/` y fuente Poppins local en `assets/fonts/` (sin servicios externos).
 
-- **Tienda:** `index.html` — catálogo, carrito, registro/login de usuario, checkout (delivery o retiro), ticket y "notificación interna" simulada.
-- **Panel del equipo:** `admin.html` — demo: `admin@technomar.ve` / `technomar2026`.
-  Resumen y ventas por sucursal, pedidos/tickets con flujo de estados (nuevo → confirmado → preparando → en camino / listo para retiro → entregado), cambio de sede, venta en mostrador, inventario por sede, clientes, ticket imprimible.
-- **Datos:** `data/productos.json` (productos, stock por sede, sucursales, zonas→sede). Todo es **de ejemplo**.
+## Pendiente / a confirmar con el cliente
 
-## Reporte de validación v1
-
-| Pedido | Estado |
-|---|---|
-| Hero, promos, categorías (filtran), catálogo con buscador, sedes, prueba social (chat), pagos, CTA final | ✅ hecho |
-| Pedido con formulario + mensaje de WhatsApp armado | ✅ (carrito → checkout → botón WhatsApp) |
-| Notificación interna con disponibilidad por sede y zona del cliente | ✅ simulada en pantalla y en el feed del panel (se actualiza entre pestañas) |
-| Registro básico por usuario | ✅ nombre, teléfono, correo, clave, zona; "Mis pedidos" |
-| Tickets, delivery/retiro, administración de ventas por sucursal | ✅ panel `admin.html`; el stock se descuenta al **confirmar** y se devuelve al cancelar |
-| Móvil primero, botón flotante WhatsApp, barra inferior | ✅ |
-
-**Mockeado / pendiente fase 2:** cuentas, pedidos y stock editado viven solo en `localStorage` del navegador (no se comparten entre dispositivos); la clave se guarda con hash SHA-256 sin sal por usuario y el login de admin es solo una puerta visual — **no es seguridad real**; no hay pagos reales, ni notificación real al equipo (WhatsApp/push), ni fotos reales de producto (se usan emojis; el JSON admite campo `img`).
-
-**Por confirmar con el cliente:** direcciones de las sedes 3, 4 y 5, horarios, métodos de pago, precios/stock reales, y el número de WhatsApp (`wa.me/4121952897` sin código de país; se asumió `58`).
+- **Stock por sede es de DEMO** (el sitio actual no lo publica). Fase 2: backend con stock real, cuentas, pedidos y avisos compartidos entre dispositivos. Hoy todo vive en el navegador de cada quien.
+- Login del panel y claves de clientes **no son seguridad real** (solo front).
+- **Precio del iPhone 18 Pro Max inconsistente** en el sitio actual: afiche $1.800, texto $1.843, catálogo $1.811 / $1.664 (Negro). Aquí se usa el catálogo.
+- **Horarios distintos** entre los afiches de sede y el texto del sitio (ej. Rattan 9:30–6:30 vs 9:00–6:00). Aquí se usa el texto del sitio.
+- Niveles de Cashea/Krece y factor 1,22 tomados del código del sitio actual: validar vigentes.
+- Mapeo zona → sede sugerida es aproximado. Costo de delivery por zona no definido.
+- 6 productos sin foto en el sitio original (se muestra ícono de categoría).

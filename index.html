@@ -3,119 +3,231 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Technomar Margarita · Teléfonos, Gamer, Carros, Salud y Accesorios</title>
-<meta name="description" content="Technomar Margarita: el mejor precio en teléfonos, gamer, carros, salud y accesorios. 0% de inicial con Cashea. 5 sedes en Porlamar.">
-<meta name="theme-color" content="#1a5cff">
-<link rel="icon" href="assets/logo.svg">
+<title>Technomar Margarita · Celulares, laptops, gaming y servicio técnico</title>
+<meta name="description" content="Technomar Margarita: celulares de todas las marcas, tablets, laptops, gaming, accesorios y servicio técnico. Financiamiento con Cashea y Krece. 5 sedes en Porlamar, delivery en la isla.">
+<meta name="theme-color" content="#0A66E7">
+<meta property="og:title" content="Technomar Margarita">
+<meta property="og:description" content="Tu tienda de tecnología en Margarita. Compra en línea, delivery o retiro en 5 sedes. Cashea y Krece.">
+<meta property="og:image" content="assets/img/site/logo.webp">
+<link rel="icon" href="assets/img/site/logo.webp">
+<link rel="preload" href="assets/fonts/poppins-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.5L21.5 7H6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 11 12 3l9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.6l.4-4h-4V6.3c0-1 .2-1.3 1.1-1.3H18V0h-3.8C10.6 0 9 1.6 9 4.6z"/></symbol>
+  <symbol id="i-th" viewBox="0 0 24 24"><path d="M17.7 11.1c-.1 0-.2-.1-.3-.1-.2-3-1.8-4.8-4.6-4.8h-.1c-1.6 0-3 .7-3.9 2l1.5 1c.6-1 1.6-1.2 2.4-1.2 1 0 1.7.3 2.2.9.3.4.6 1 .7 1.7-.8-.1-1.6-.2-2.5-.1-2.5.1-4.2 1.6-4.1 3.7.1 1.1.6 2 1.5 2.6.8.5 1.8.8 2.8.7 1.4-.1 2.5-.6 3.2-1.6.6-.7.9-1.7 1-2.9.7.4 1.2.9 1.4 1.6.5 1.1.5 2.9-1 4.3-1.3 1.3-2.8 1.8-5.2 1.8-2.6 0-4.6-.9-5.9-2.5C5.5 16.7 4.9 14.6 4.9 12s.6-4.7 1.9-6.2C8 4.1 10 3.3 12.6 3.3c2.6 0 4.6.8 5.9 2.5.7.8 1.1 1.8 1.4 3l1.8-.5c-.4-1.4-1-2.7-1.8-3.7C18.2 2.4 15.8 1.4 12.6 1.4 9.5 1.4 7.1 2.4 5.5 4.4 4 6.2 3.2 8.7 3.2 12s.8 5.8 2.3 7.6c1.6 2 4 3 7.1 3 2.8 0 4.7-.7 6.3-2.3 2.1-2.1 2.1-4.7 1.4-6.3-.5-1.2-1.4-2.1-2.6-2.9zm-4.6 4.6c-1.2.1-2.4-.5-2.4-1.5-.1-.8.5-1.6 2.3-1.7h.6c.7 0 1.3.1 1.9.2-.2 2.6-1.4 2.9-2.4 3z"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><path d="M19.6 6.7a4.8 4.8 0 0 1-3.8-4.2V2h-3.4v13.7a2.9 2.9 0 0 1-5.2 1.7 2.9 2.9 0 0 1 3.2-4.5V9.4a6.3 6.3 0 0 0-5.4 10.7 6.3 6.3 0 0 0 10.8-4.4v-7a8.2 8.2 0 0 0 4.8 1.5V6.8a4.8 4.8 0 0 1-1-.1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 13.6l-8.4 8.4-2.3-2.3a4 4 0 0 0-5-5L2 10.4 10.4 2z" transform="scale(.9) translate(1 1)"/></symbol>
+</svg>
+
 <div class="ticker" aria-hidden="true"><div class="ticker-track">
-  <span>🔥 0% DE INICIAL CON CASHEA</span><span>🌴 NO FUIMOS LOS PRIMEROS… PERO NOS LLEGÓ AL MEJOR PRECIO</span><span>🛵 DELIVERY EN TODA MARGARITA</span><span>🎉 ESTAMOS DE ANIVERSARIO</span>
-  <span>🔥 0% DE INICIAL CON CASHEA</span><span>🌴 NO FUIMOS LOS PRIMEROS… PERO NOS LLEGÓ AL MEJOR PRECIO</span><span>🛵 DELIVERY EN TODA MARGARITA</span><span>🎉 ESTAMOS DE ANIVERSARIO</span>
+  <span>🔥 <b>DÍAS DEL CLUB CASHEA</b> · del 1 al 6: menos inicial, más cuotas</span><span>🌴 NO FUIMOS LOS PRIMEROS… PERO NOS LLEGÓ AL MEJOR PRECIO · iPHONE 18 PRO MAX</span><span>🔧 ¡LA REVISIÓN ES GRATIS! en servicio técnico</span><span>🛵 DELIVERY EN TODA MARGARITA</span><span>💳 Krece desde 5% de inicial</span>
+  <span>🔥 <b>DÍAS DEL CLUB CASHEA</b> · del 1 al 6: menos inicial, más cuotas</span><span>🌴 NO FUIMOS LOS PRIMEROS… PERO NOS LLEGÓ AL MEJOR PRECIO · iPHONE 18 PRO MAX</span><span>🔧 ¡LA REVISIÓN ES GRATIS! en servicio técnico</span><span>🛵 DELIVERY EN TODA MARGARITA</span><span>💳 Krece desde 5% de inicial</span>
 </div></div>
 
 <header class="top"><div class="wrap top-in">
-  <a class="brand" href="#inicio"><img src="assets/logo.svg" width="40" height="40" alt="Logo Technomar"><span><span class="t">TECHNO</span><span class="m">MAR</span><small>MARGARITA</small></span></a>
-  <nav class="nav"><a href="#promos">Promos</a><a href="#catalogo">Catálogo</a><a href="#sedes">Sedes</a><a href="#pagos">Pagos</a></nav>
+  <a class="brand" href="#inicio" aria-label="Technomar Margarita, inicio"><img src="assets/img/site/logo.webp" width="44" height="44" alt=""><span class="wm"><span class="t">TECHNO</span><span class="m">MAR</span><small>MARGARITA</small></span></a>
+  <nav class="nav" aria-label="Principal"><a href="#catalogo">Catálogo</a><a href="#financiamiento">Financiamiento</a><a href="#servicio-tecnico">Servicio técnico</a><a href="#sedes">Sedes</a></nav>
+  <label class="hsearch"><svg class="ico"><use href="#i-search"/></svg><input id="qTop" type="search" placeholder="Buscar iPhone, Redmi, PS5…" aria-label="Buscar productos"></label>
   <div class="top-act">
-    <button class="icon-btn" id="btnAcc" aria-label="Mi cuenta">👤</button>
-    <button class="icon-btn" id="btnCart" aria-label="Carrito">🛒<span class="badge" id="cartBadge" data-n="0"></span></button>
+    <button class="icon-btn" id="btnSearch" aria-label="Buscar"><svg><use href="#i-search"/></svg></button>
+    <button class="icon-btn" id="btnAcc" aria-label="Mi cuenta"><svg><use href="#i-user"/></svg></button>
+    <button class="icon-btn" id="btnCart" aria-label="Carrito"><svg><use href="#i-cart"/></svg><span class="badge" id="cartBadge" data-n="0"></span></button>
   </div>
 </div></header>
 
 <main id="inicio">
-<section class="hero">
-  <div class="sun"></div>
-  <svg class="palm-bg" viewBox="0 0 100 140" aria-hidden="true"><path d="M50 140c-2-30 0-60 10-85" stroke="#a5521a" stroke-width="7" fill="none" stroke-linecap="round"/><g fill="#3f9a1c"><path d="M60 55c-22-24-44-18-58-2 22-4 40-1 58 2z"/><path d="M60 55c8-26 26-38 44-34-16 8-26 20-44 34z"/><path d="M60 55c18-12 38-8 50 8-22-4-38-4-50-8z"/><path d="M60 55c-14 12-18 30-10 46 4-20 6-32 10-46z"/></g></svg>
-  <div class="wrap hero-grid">
-    <div>
-      <span class="pill"><b>NUEVO</b> iPhone 18 Pro Max ya en sede</span>
-      <h1>Tecnología al <em>mejor precio</em> de <span>Margarita</span> 🌴</h1>
-      <p class="lead">Teléfonos, gamer, carros, salud y accesorios. Compra en línea, recibe por delivery o retira en la sede más cercana. <b>0% de inicial</b> con Cashea.</p>
-      <div class="cta-row">
-        <a class="btn btn-blue" href="#promos">Ver promociones</a>
-        <a class="btn btn-wa" id="heroWa" href="#" target="_blank" rel="noopener">💬 Escríbenos</a>
-      </div>
+<section class="hero"><div class="wrap">
+  <div class="slider">
+    <div class="slides" id="slides">
+      <article class="slide s-blue">
+        <div class="hs-text"><span class="hs-tag">¡Ya disponible en tienda!</span>
+          <h1>No fuimos los primeros… <span style="color:#9fd0ff">pero nos llegó al mejor precio</span></h1>
+<p>El iPhone más avanzado: 6.9", Apple Intelligence y cámaras Pro de 48MP. Sellado, 256GB.</p>
+          <button class="btn btn-blanco btn-sm" data-detail="iphone-18-pro-max">¡Lo quiero!</button></div>
+        <div class="hs-img"><img src="assets/img/site/iphone18-hero.webp" alt="Afiche iPhone 18 Pro Max en Technomar" width="560" height="700" fetchpriority="high"></div>
+      </article>
+      <article class="slide s-cashea">
+        <div class="hs-text"><span class="hs-tag">🔥 Días del Club · Cashea</span>
+          <h2>¡Menos inicial, más cuotas!</h2>
+          <p>Del 1 al 6 de cada mes: llévatelo a partir de $100 con inicial reducida según tu nivel.</p>
+          <button class="btn btn-blanco btn-sm" data-mode-go="cashea">Ver precios en Cashea</button></div>
+        <div class="hs-img"><img src="assets/img/site/cashea-club.webp" alt="Afiche Días del Club Cashea" width="560" height="700" loading="lazy"></div>
+      </article>
+      <article class="slide s-green">
+        <div class="hs-text"><span class="hs-tag">Servicio técnico</span>
+          <h2>¿Tu celular tiene fallas? ¡La revisión es gratis!</h2>
+          <p>Pantallas, baterías, pines de carga y software, con garantía.</p>
+          <a class="btn btn-blanco btn-sm" href="#servicio-tecnico">Cotizar reparación</a></div>
+        <div class="hs-img"><img src="assets/img/site/servicio-tecnico.webp" alt="Afiche servicio técnico Technomar" width="560" height="700" loading="lazy"></div>
+      </article>
+      <article class="slide s-sea">
+        <div class="hs-text"><span class="hs-tag">5 sedes en Porlamar</span>
+          <h2>Compra en línea y retira en tu sede o recíbelo en casa 🛵</h2>
+          <a class="btn btn-blanco btn-sm" href="#sedes">Ver sedes</a></div>
+        <div class="hs-img"><img src="assets/img/site/sede-lavela.webp" alt="Sede Technomar C.C. La Vela" width="560" height="700" loading="lazy"></div>
+      </article>
     </div>
-    <div class="hero-card">
-      <span class="cashea">◐ cashea</span>
-      <div class="big" style="margin-top:12px">0%<small> de inicial</small></div>
-      <p style="color:var(--mute);margin:6px 0 14px">Estrena hoy, paga en cuotas. Aplica en teléfonos y accesorios seleccionados.</p>
-      <button class="btn btn-green" data-filter="telefonos" style="width:100%">Ver teléfonos →</button>
-    </div>
+    <div class="dots" id="dots"></div>
   </div>
-  <svg class="waves" viewBox="0 0 1440 54" preserveAspectRatio="none" aria-hidden="true"><path fill="#fbfdff" d="M0 30c120 22 240 22 360 6s240-30 360-24 240 28 360 30 240-12 360-28v40H0z"/></svg>
-</section>
+  <div class="trust">
+    <div><img src="assets/img/site/cashea.webp" alt="">Paga con <b>Cashea</b></div>
+    <div><img src="assets/img/site/krece.webp" alt="">Estrena con <b>Krece</b></div>
+    <div>📸 <b>+48 mil</b> seguidores</div>
+    <div>📍 <b>5</b> sedes</div>
+    <div>⭐ <b>5 años</b> contigo</div>
+    <div>🛵 Delivery en la isla</div>
+  </div>
+</div></section>
 
-<section class="sec" id="promos"><div class="wrap">
-  <div class="sec-head reveal"><span class="eyebrow">Ofertas reales</span><h2>Promociones destacadas</h2><p>Precios por tiempo limitado. Hasta agotar existencias.</p></div>
-  <div class="promo-scroll" id="promoList"></div>
+<section class="sec" style="padding-top:20px"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">¿Qué necesitas hoy?</span><h2>Categorías</h2></div>
+  <div class="cats" id="cats"></div>
 </div></section>
 
 <section class="sec" style="padding-top:8px"><div class="wrap">
-  <div class="sec-head reveal"><span class="eyebrow">Explora</span><h2>Categorías</h2></div>
-  <div class="cat-grid" id="catGrid"></div>
+  <div class="sec-head row"><div><span class="eyebrow">Lo más buscado</span><h2>Equipos destacados</h2></div><a class="link" href="#catalogo">Ver todo →</a></div>
+  <div class="hscroll" id="featured"></div>
 </div></section>
 
-<section class="sec" id="catalogo"><div class="wrap">
-  <div class="sec-head reveal"><span class="eyebrow">Todo en un solo lugar</span><h2>Catálogo</h2><p>Un solo catálogo para las 5 sedes: nosotros ubicamos tu pedido en la sucursal que lo tenga.</p></div>
-  <label class="search"><span>🔍</span><input id="q" type="search" placeholder="Busca iPhone, PS5, cargador…" aria-label="Buscar productos"></label>
+<section class="sec" style="padding-top:8px"><div class="wrap">
+  <div class="spot reveal">
+    <div>
+      <span class="eyebrow">Apple · ¡Ya disponible!</span>
+      <h2>iPhone 18 Pro Max</h2>
+      <ul>
+        <li>Pantalla 6.9" Super Retina XDR ProMotion 120Hz</li>
+        <li>Máximo rendimiento con Apple Intelligence</li>
+        <li>Sistema de cámaras Pro 48MP</li>
+        <li>256GB · 100% eSIM · Sellado</li>
+      </ul>
+      <div class="sp-p" id="spotPrice"></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+        <button class="btn btn-blanco" data-detail="iphone-18-pro-max">Ver opciones</button>
+        <a class="btn btn-wa" id="spotWa" target="_blank" rel="noopener" href="#"><svg class="ico" fill="currentColor"><use href="#i-wa"/></svg>Pedir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="sp-img"><img src="assets/img/site/iphone18-hero.webp" alt="iPhone 18 Pro Max" loading="lazy" width="560" height="700"></div>
+  </div>
+</div></section>
+
+<section class="sec alt" id="catalogo"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Catálogo global</span><h2>Todo en un solo lugar</h2><p>Un catálogo para las 5 sedes: ubicamos tu pedido en la sucursal que lo tenga.</p></div>
+  <div class="cat-bar">
+    <label class="search"><svg class="ico"><use href="#i-search"/></svg><input id="q" type="search" placeholder="¿Qué estás buscando?" aria-label="Buscar en el catálogo"></label>
+    <div class="cb-row">
+      <div class="modes" id="modes" role="tablist" aria-label="Ver precios en">
+        <button data-mode="usd">$ Divisas</button><button data-mode="bs">Bs BCV</button><button data-mode="cashea">Cashea</button><button data-mode="krece">Krece</button>
+      </div>
+      <button class="fbtn" id="btnFiltros"><svg class="ico"><use href="#i-filter"/></svg>Filtros<span class="badge" id="fBadge" data-n="0"></span></button>
+    </div>
+  </div>
   <div class="chips" id="chips"></div>
+  <div class="res-info"><span id="resCount"></span>
+    <select id="sort" aria-label="Ordenar"><option value="rel">Destacados primero</option><option value="asc">Menor precio</option><option value="desc">Mayor precio</option><option value="az">A–Z</option></select></div>
   <div class="grid" id="grid"></div>
+  <div class="more"><button class="btn btn-line" id="btnMore">Ver más equipos</button></div>
 </div></section>
 
-<section class="sec" id="sedes"><div class="wrap">
-  <div class="sec-head reveal"><span class="eyebrow">Pásate por aquí</span><h2>Nuestras 5 sedes</h2><p>Porlamar, Nueva Esparta.</p></div>
+<section class="sec"><div class="wrap">
+  <div class="duo">
+    <div class="box box-duo reveal"><img src="assets/img/site/iphone-duo.webp" alt="iPhone Duo" loading="lazy">
+      <div><span class="eyebrow">Próximamente</span><h3>iPhone Duo</h3><p>Innovación plegable de doble pantalla. Preventa activa: aparta el tuyo.</p>
+      <a class="btn btn-azul btn-sm" id="duoWa" target="_blank" rel="noopener" href="#">Consultar preventa</a></div></div>
+    <div class="box box-hank reveal"><img src="assets/img/site/hank.webp" alt="HANK" loading="lazy">
+      <div><span class="eyebrow" style="background:rgba(255,255,255,.15);color:#fff">Nuevo aliado oficial</span><h3>La certeza tecnológica</h3><p>Cargadores, cables y powerbanks HANK: velocidad y seguridad verificadas.</p>
+      <a class="btn btn-blanco btn-sm" href="https://www.instagram.com/hanktech/" target="_blank" rel="noopener">Síguelos en Instagram</a></div></div>
+  </div>
+</div></section>
+
+<section class="sec alt" id="financiamiento"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Facilidades de pago</span><h2>Llévalo hoy, paga después</h2><p>Calcula tu inicial y cuotas al instante con nuestras plataformas aliadas.</p></div>
+  <div class="club reveal" style="margin-bottom:14px">
+    <img src="assets/img/site/cashea-club.webp" alt="Días del Club Cashea" loading="lazy">
+    <div class="ct"><span class="tagc">🔥 Días del Club</span><h3>¡Menos inicial, más cuotas!</h3>
+      <p style="opacity:.9;font-size:.88rem">Llévatelo todo a partir de $100 combinando tu bajada de inicial con más cuotas según tu nivel en la app.</p>
+      <ul><li>🗓️ <b>Días 1 al 6:</b> ¡en 6 cuotas! sin interés y bajada de inicial (hasta 0%) para niveles seleccionados.</li><li>🗓️ <b>Días 15 al 20:</b> Casheálo con menos: inicial reducida escalonada en compras de hasta 3 cuotas.</li></ul>
+      <button class="btn btn-blanco btn-sm" data-mode-go="cashea">Ver equipos con Cashea</button></div>
+  </div>
+  <div class="fin" id="fin"></div>
+  <p class="note" style="margin-top:12px">ℹ️ Montos referenciales: la inicial y las cuotas finales las define Cashea/Krece según tu nivel en la app.</p>
+</div></section>
+
+<section class="sec" id="servicio-tecnico"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow g">Soporte experto</span><h2>Servicio Técnico Technomar</h2></div>
+  <div class="st">
+    <div class="st-img reveal"><img src="assets/img/site/servicio-tecnico.webp" alt="Servicio técnico Technomar" loading="lazy"></div>
+    <div>
+      <span class="free">¡LA REVISIÓN ES GRATIS!</span>
+      <p style="color:var(--mute)">¿Tu celular tiene fallas? ¡Te lo dejamos como nuevo! Repuestos de calidad y garantía.</p>
+      <ul class="st-list"><li>📱 Cambio de pantallas y tapas</li><li>🔋 Baterías, flex y pines de carga</li><li>💾 Reparación de software</li><li>⚡ Equipos que no encienden o se reinician</li></ul>
+      <div class="steps" id="coti"></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec alt" id="sedes"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Nuestras tiendas</span><h2>Sedes en Margarita</h2><p>Escríbele directo a tu sede o pide que te llevemos el equipo.</p></div>
   <div class="sedes" id="sedeList"></div>
 </div></section>
 
-<section class="sec social"><div class="wrap">
-  <span class="eyebrow">Somos comunidad</span><h2 style="margin-top:4px">48.9 mil personas confían en nosotros</h2>
-  <div class="stats"><div><b>48.9k</b><span>seguidores</span></div><div><b>477</b><span>publicaciones</span></div><div><b>5</b><span>sedes</span></div></div>
-  <div class="chat reveal" aria-label="Ejemplo de conversación">
-    <div class="chat-h"><i>🧑‍💼</i><div>Sección de preguntas con el jefe<small>en línea</small></div></div>
-    <div class="msg in">Jefe, ¿de verdad el iPhone 18 Pro Max está al mejor precio? 👀<time>10:02</time></div>
-    <div class="msg out">No fuimos los primeros… pero nos llegó al mejor precio 😎<time>10:03 <span class="ticks">✓✓</span></time></div>
-    <div class="msg in">¿Y puedo pagarlo con Cashea?<time>10:03</time></div>
-    <div class="msg out">Claro, 0% de inicial. Pásate por la sede o pídelo aquí mismo 📲<time>10:04 <span class="ticks">✓✓</span></time></div>
-  </div>
-  <p style="margin-top:16px;opacity:.75;font-size:.8rem">*Conversación ilustrativa. Reemplazar por preguntas reales de la sección "Preguntas con el jefe" y fotos de clientes.</p>
-</div></section>
-
 <section class="sec" id="pagos"><div class="wrap">
-  <div class="sec-head reveal"><span class="eyebrow">Fácil y flexible</span><h2>Métodos de pago</h2></div>
-  <div class="pays" id="payList"></div>
+  <div class="sec-head"><span class="eyebrow">Pagos</span><h2>Métodos de pago</h2></div>
+  <div class="pays">
+    <div class="pay hl">✅ Recibimos a tasa BCV</div>
+    <div class="pay">💵 Divisas</div><div class="pay">🏦 Transferencias</div><div class="pay">📲 Pago Móvil</div><div class="pay">💴 Efectivo</div><div class="pay">💳 Punto de Venta</div>
+    <div class="pay"><img src="assets/img/site/cashea.webp" alt="">Cashea</div><div class="pay"><img src="assets/img/site/krece.webp" alt="">Krece</div>
+  </div>
 </div></section>
 
-<section class="sec"><div class="wrap"><div class="final reveal">
-  <h2>¿Listo para estrenar? 🌴</h2>
-  <p>Escríbenos y te respondemos en minutos. Delivery o retiro en sede.</p>
-  <a class="btn btn-wa" id="finalWa" href="#" target="_blank" rel="noopener">💬 Pedir por WhatsApp</a>
-</div></div></section>
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="comm reveal">
+    <div><span class="eyebrow">Síguenos y escríbenos</span><h2>Somos comunidad 🌴</h2>
+      <div class="stats"><div><b>48.9k</b><span>seguidores</span></div><div><b>5</b><span>sedes</span></div><div><b>5 años</b><span>contigo</span></div></div>
+      <div class="socials" id="socials" style="margin-top:18px"></div></div>
+    <div class="chat" aria-label="Ejemplo de conversación">
+      <div class="chat-h"><img src="assets/img/site/logo.webp" alt=""><div>Preguntas con el jefe<small>en línea</small></div></div>
+      <div class="msg in">Jefe, ¿de verdad el iPhone 18 Pro Max está al mejor precio? 👀<time>10:02</time></div>
+      <div class="msg out">No fuimos los primeros… pero nos llegó al mejor precio 😎<time>10:03 <span class="ticks">✓✓</span></time></div>
+      <div class="msg in">¿Y me lo llevan a Pampatar?<time>10:03</time></div>
+      <div class="msg out">¡Claro! Pídelo en la web y te lo llevamos, o retíralo en la sede más cercana 🛵<time>10:04 <span class="ticks">✓✓</span></time></div>
+    </div>
+  </div>
+</div></section>
 </main>
 
 <footer><div class="wrap">
-  <div class="f-row">
-    <div><b style="color:#fff">TECHNOMAR MARGARITA</b><br>Porlamar, Nueva Esparta · Venezuela</div>
-    <div>📸 <a href="https://instagram.com/technomar.ve" target="_blank" rel="noopener">@technomar.ve</a><br>💬 <a id="footWa" href="#" target="_blank" rel="noopener">WhatsApp</a></div>
-    <div>🕘 Horarios: <i>por confirmar con el cliente</i><br><a href="admin.html">Acceso equipo →</a></div>
+  <div class="fg">
+    <div><div class="fb"><img src="assets/img/site/logo.webp" alt="Technomar"><div><b style="color:#fff">TECHNOMAR MARGARITA</b><br>RIF: <span id="rif"></span><br>Isla de Margarita, Venezuela</div></div></div>
+    <div><h4>Tienda</h4><ul><li><a href="#catalogo">Catálogo</a></li><li><a href="#financiamiento">Cashea y Krece</a></li><li><a href="#servicio-tecnico">Servicio técnico</a></li><li><a href="admin.html">Acceso equipo</a></li></ul></div>
+    <div><h4>Sedes</h4><ul id="footSedes"></ul></div>
+    <div><h4>Contacto</h4><ul><li><a id="footWa" href="#" target="_blank" rel="noopener">WhatsApp ventas</a></li><li><a id="footTec" href="#" target="_blank" rel="noopener">WhatsApp servicio técnico</a></li><li><a href="https://www.instagram.com/technomar.ve" target="_blank" rel="noopener">@technomar.ve</a></li></ul></div>
   </div>
-  <p class="small">v1 demo: los datos de productos, precios y stock son de ejemplo. Los pedidos y cuentas se guardan solo en este navegador.</p>
+  <p class="small">© 2026 Technomar Margarita. Versión demo: pedidos, cuentas y stock por sede se guardan solo en este navegador. Precios referenciales sujetos a cambio.</p>
 </div></footer>
 
-<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.8 1.5 5.7 1.5 7 0 12.6-5.6 12.6-12.5C28.7 8.6 23 3 16 3zm0 22.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.4 1.2 1.2-4.2-.3-.4a10.2 10.2 0 0 1-1.6-5.4C5.5 9.9 10.2 5.3 16 5.3s10.5 4.6 10.5 10.2S21.800 25.900 16 25.900zm5.800-7.600c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.600 8.600 0 0 1-4.300-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400s-1.200 1.100-1.200 2.800 1.200 3.300 1.400 3.500 2.400 3.700 5.800 5.100c2.100.9 2.900.9 3.900.8.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.3z"/></svg></a>
-
-<nav class="tabbar" aria-label="Navegación">
-  <a href="#inicio"><span class="i">🏠</span>Inicio</a>
-  <a href="#catalogo"><span class="i">🛍️</span>Catálogo</a>
-  <button id="tabCart"><span class="i">🛒</span>Carrito<span class="badge" id="cartBadge2" data-n="0"></span></button>
-  <button id="tabAcc"><span class="i">👤</span>Cuenta</button>
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+<nav class="tabbar" aria-label="Navegación móvil">
+  <a href="#inicio"><svg><use href="#i-home"/></svg>Inicio</a>
+  <a href="#catalogo"><svg><use href="#i-grid"/></svg>Catálogo</a>
+  <button id="tabCart"><svg><use href="#i-cart"/></svg>Carrito<span class="badge" id="cartBadge2" data-n="0"></span></button>
+  <button id="tabAcc"><svg><use href="#i-user"/></svg>Cuenta</button>
 </nav>
-
 <div class="scrim" id="scrim"></div>
-<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-live="polite"></aside>
-<div class="toast" id="toast" role="status"></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true"></aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="js/store.js"></script>
 <script src="js/app.js"></script>
 </body>
