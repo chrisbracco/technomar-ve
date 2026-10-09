@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Technomar Margarita · Teléfonos, Gamer, Carros, Salud y Accesorios</title>
+<meta name="description" content="Technomar Margarita: el mejor precio en teléfonos, gamer, carros, salud y accesorios. 0% de inicial con Cashea. 5 sedes en Porlamar.">
+<meta name="theme-color" content="#1a5cff">
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="ticker" aria-hidden="true"><div class="ticker-track">
+  <span>🔥 0% DE INICIAL CON CASHEA</span><span>🌴 NO FUIMOS LOS PRIMEROS… PERO NOS LLEGÓ AL MEJOR PRECIO</span><span>🛵 DELIVERY EN TODA MARGARITA</span><span>🎉 ESTAMOS DE ANIVERSARIO</span>
+  <span>🔥 0% DE INICIAL CON CASHEA</span><span>🌴 NO FUIMOS LOS PRIMEROS… PERO NOS LLEGÓ AL MEJOR PRECIO</span><span>🛵 DELIVERY EN TODA MARGARITA</span><span>🎉 ESTAMOS DE ANIVERSARIO</span>
+</div></div>
+
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="#inicio"><img src="assets/logo.svg" width="40" height="40" alt="Logo Technomar"><span><span class="t">TECHNO</span><span class="m">MAR</span><small>MARGARITA</small></span></a>
+  <nav class="nav"><a href="#promos">Promos</a><a href="#catalogo">Catálogo</a><a href="#sedes">Sedes</a><a href="#pagos">Pagos</a></nav>
+  <div class="top-act">
+    <button class="icon-btn" id="btnAcc" aria-label="Mi cuenta">👤</button>
+    <button class="icon-btn" id="btnCart" aria-label="Carrito">🛒<span class="badge" id="cartBadge" data-n="0"></span></button>
+  </div>
+</div></header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="sun"></div>
+  <svg class="palm-bg" viewBox="0 0 100 140" aria-hidden="true"><path d="M50 140c-2-30 0-60 10-85" stroke="#a5521a" stroke-width="7" fill="none" stroke-linecap="round"/><g fill="#3f9a1c"><path d="M60 55c-22-24-44-18-58-2 22-4 40-1 58 2z"/><path d="M60 55c8-26 26-38 44-34-16 8-26 20-44 34z"/><path d="M60 55c18-12 38-8 50 8-22-4-38-4-50-8z"/><path d="M60 55c-14 12-18 30-10 46 4-20 6-32 10-46z"/></g></svg>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill"><b>NUEVO</b> iPhone 18 Pro Max ya en sede</span>
+      <h1>Tecnología al <em>mejor precio</em> de <span>Margarita</span> 🌴</h1>
+      <p class="lead">Teléfonos, gamer, carros, salud y accesorios. Compra en línea, recibe por delivery o retira en la sede más cercana. <b>0% de inicial</b> con Cashea.</p>
+      <div class="cta-row">
+        <a class="btn btn-blue" href="#promos">Ver promociones</a>
+        <a class="btn btn-wa" id="heroWa" href="#" target="_blank" rel="noopener">💬 Escríbenos</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <span class="cashea">◐ cashea</span>
+      <div class="big" style="margin-top:12px">0%<small> de inicial</small></div>
+      <p style="color:var(--mute);margin:6px 0 14px">Estrena hoy, paga en cuotas. Aplica en teléfonos y accesorios seleccionados.</p>
+      <button class="btn btn-green" data-filter="telefonos" style="width:100%">Ver teléfonos →</button>
+    </div>
+  </div>
+  <svg class="waves" viewBox="0 0 1440 54" preserveAspectRatio="none" aria-hidden="true"><path fill="#fbfdff" d="M0 30c120 22 240 22 360 6s240-30 360-24 240 28 360 30 240-12 360-28v40H0z"/></svg>
+</section>
+
+<section class="sec" id="promos"><div class="wrap">
+  <div class="sec-head reveal"><span class="eyebrow">Ofertas reales</span><h2>Promociones destacadas</h2><p>Precios por tiempo limitado. Hasta agotar existencias.</p></div>
+  <div class="promo-scroll" id="promoList"></div>
+</div></section>
+
+<section class="sec" style="padding-top:8px"><div class="wrap">
+  <div class="sec-head reveal"><span class="eyebrow">Explora</span><h2>Categorías</h2></div>
+  <div class="cat-grid" id="catGrid"></div>
+</div></section>
+
+<section class="sec" id="catalogo"><div class="wrap">
+  <div class="sec-head reveal"><span class="eyebrow">Todo en un solo lugar</span><h2>Catálogo</h2><p>Un solo catálogo para las 5 sedes: nosotros ubicamos tu pedido en la sucursal que lo tenga.</p></div>
+  <label class="search"><span>🔍</span><input id="q" type="search" placeholder="Busca iPhone, PS5, cargador…" aria-label="Buscar productos"></label>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="sec" id="sedes"><div class="wrap">
+  <div class="sec-head reveal"><span class="eyebrow">Pásate por aquí</span><h2>Nuestras 5 sedes</h2><p>Porlamar, Nueva Esparta.</p></div>
+  <div class="sedes" id="sedeList"></div>
+</div></section>
+
+<section class="sec social"><div class="wrap">
+  <span class="eyebrow">Somos comunidad</span><h2 style="margin-top:4px">48.9 mil personas confían en nosotros</h2>
+  <div class="stats"><div><b>48.9k</b><span>seguidores</span></div><div><b>477</b><span>publicaciones</span></div><div><b>5</b><span>sedes</span></div></div>
+  <div class="chat reveal" aria-label="Ejemplo de conversación">
+    <div class="chat-h"><i>🧑‍💼</i><div>Sección de preguntas con el jefe<small>en línea</small></div></div>
+    <div class="msg in">Jefe, ¿de verdad el iPhone 18 Pro Max está al mejor precio? 👀<time>10:02</time></div>
+    <div class="msg out">No fuimos los primeros… pero nos llegó al mejor precio 😎<time>10:03 <span class="ticks">✓✓</span></time></div>
+    <div class="msg in">¿Y puedo pagarlo con Cashea?<time>10:03</time></div>
+    <div class="msg out">Claro, 0% de inicial. Pásate por la sede o pídelo aquí mismo 📲<time>10:04 <span class="ticks">✓✓</span></time></div>
+  </div>
+  <p style="margin-top:16px;opacity:.75;font-size:.8rem">*Conversación ilustrativa. Reemplazar por preguntas reales de la sección "Preguntas con el jefe" y fotos de clientes.</p>
+</div></section>
+
+<section class="sec" id="pagos"><div class="wrap">
+  <div class="sec-head reveal"><span class="eyebrow">Fácil y flexible</span><h2>Métodos de pago</h2></div>
+  <div class="pays" id="payList"></div>
+</div></section>
+
+<section class="sec"><div class="wrap"><div class="final reveal">
+  <h2>¿Listo para estrenar? 🌴</h2>
+  <p>Escríbenos y te respondemos en minutos. Delivery o retiro en sede.</p>
+  <a class="btn btn-wa" id="finalWa" href="#" target="_blank" rel="noopener">💬 Pedir por WhatsApp</a>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="f-row">
+    <div><b style="color:#fff">TECHNOMAR MARGARITA</b><br>Porlamar, Nueva Esparta · Venezuela</div>
+    <div>📸 <a href="https://instagram.com/technomar.ve" target="_blank" rel="noopener">@technomar.ve</a><br>💬 <a id="footWa" href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+    <div>🕘 Horarios: <i>por confirmar con el cliente</i><br><a href="admin.html">Acceso equipo →</a></div>
+  </div>
+  <p class="small">v1 demo: los datos de productos, precios y stock son de ejemplo. Los pedidos y cuentas se guardan solo en este navegador.</p>
+</div></footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.8 1.5 5.7 1.5 7 0 12.6-5.6 12.6-12.5C28.7 8.6 23 3 16 3zm0 22.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.4 1.2 1.2-4.2-.3-.4a10.2 10.2 0 0 1-1.6-5.4C5.5 9.9 10.2 5.3 16 5.3s10.5 4.6 10.5 10.2S21.800 25.900 16 25.900zm5.800-7.600c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.600 8.600 0 0 1-4.300-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400s-1.200 1.100-1.200 2.800 1.200 3.300 1.400 3.500 2.400 3.700 5.800 5.100c2.100.9 2.900.9 3.900.8.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.3z"/></svg></a>
+
+<nav class="tabbar" aria-label="Navegación">
+  <a href="#inicio"><span class="i">🏠</span>Inicio</a>
+  <a href="#catalogo"><span class="i">🛍️</span>Catálogo</a>
+  <button id="tabCart"><span class="i">🛒</span>Carrito<span class="badge" id="cartBadge2" data-n="0"></span></button>
+  <button id="tabAcc"><span class="i">👤</span>Cuenta</button>
+</nav>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-live="polite"></aside>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+{
+ "_nota": "Datos de DEMO. Editar precios, stock y sucursales aquí. precioAntes=0 significa sin descuento. Opcional: campo 'img' con ruta a una foto real.",
+ "whatsapp": "584121952897",
+ "sucursales": [
+  {
+   "id": "s1",
+   "nombre": "Rattan · Playa El Ángel",
+   "direccion": "Rattan, Playa El Ángel (Mezzanina Supermercado), Porlamar",
+   "maps": "Rattan Playa El Angel Porlamar"
+  },
+  {
+   "id": "s2",
+   "nombre": "Mariño · Plaza Bolívar",
+   "direccion": "C/ Mariño, Plaza Bolívar, Porlamar",
+   "maps": "Calle Mariño Plaza Bolivar Porlamar"
+  },
+  {
+   "id": "s3",
+   "nombre": "Igualdad · Gómez",
+   "direccion": "C/ Igualdad entre Gómez y … (completar con el cliente), Porlamar",
+   "maps": "Calle Igualdad Gomez Porlamar"
+  },
+  {
+   "id": "s4",
+   "nombre": "Sede Centro Plaza",
+   "direccion": "Centro Plaza, Porlamar (sede del aniversario)",
+   "maps": "Centro Plaza Porlamar"
+  },
+  {
+   "id": "s5",
+   "nombre": "Sede 5 (por confirmar)",
+   "direccion": "Dirección por confirmar con el cliente",
+   "maps": "Porlamar"
+  }
+ ],
+ "zonas": [
+  {
+   "nombre": "Porlamar Centro",
+   "sucursal": "s2"
+  },
+  {
+   "nombre": "Playa El Ángel",
+   "sucursal": "s1"
+  },
+  {
+   "nombre": "Pampatar",
+   "sucursal": "s1"
+  },
+  {
+   "nombre": "Costa Azul",
+   "sucursal": "s1"
+  },
+  {
+   "nombre": "Los Robles",
+   "sucursal": "s3"
+  },
+  {
+   "nombre": "Jorge Coll",
+   "sucursal": "s3"
+  },
+  {
+   "nombre": "Villa Rosa",
+   "sucursal": "s4"
+  },
+  {
+   "nombre": "La Asunción",
+   "sucursal": "s4"
+  },
+  {
+   "nombre": "Juan Griego",
+   "sucursal": "s5"
+  },
+  {
+   "nombre": "Punta de Piedras",
+   "sucursal": "s5"
+  },
+  {
+   "nombre": "El Valle",
+   "sucursal": "s3"
+  },
+  {
+   "nombre": "Otra zona de Margarita",
+   "sucursal": "s2"
+  }
+ ],
+ "categorias": [
+  {
+   "id": "telefonos",
+   "nombre": "Teléfonos",
+   "emoji": "📱"
+  },
+  {
+   "id": "gamer",
+   "nombre": "Gamer",
+   "emoji": "🎮"
+  },
+  {
+   "id": "carros",
+   "nombre": "Carros",
+   "emoji": "🚗"
+  },
+  {
+   "id": "salud",
+   "nombre": "Salud",
+   "emoji": "🩺"
+  },
+  {
+   "id": "accesorios",
+   "nombre": "Accesorios",
+   "emoji": "🎧"
+  }
+ ],
+ "productos": [
+  {
+   "id": "iphone-18-pro-max",
+   "nombre": "iPhone 18 Pro Max 256GB",
+   "categoria": "telefonos",
+   "precio": 1199,
+   "precioAntes": 1299,
+   "etiqueta": "Mejor precio",
+   "emoji": "📱",
+   "descripcion": "El que todos quieren, a precio Technomar. Garantía en tienda.",
+   "destacado": true,
+   "stock": {
+    "s1": 3,
+    "s2": 2,
+    "s3": 0,
+    "s4": 4,
+    "s5": 1
+   }
+  },
+  {
+   "id": "galaxy-s26",
+   "nombre": "Samsung Galaxy S26 128GB",
+   "categoria": "telefonos",
+   "precio": 749,
+   "precioAntes": 829,
+   "etiqueta": "-10%",
+   "emoji": "📱",
+   "descripcion": "Pantalla AMOLED, cámara pro y batería para todo el día.",
+   "destacado": true,
+   "stock": {
+    "s1": 2,
+    "s2": 3,
+    "s3": 2,
+    "s4": 0,
+    "s5": 1
+   }
+  },
+  {
+   "id": "redmi-note-15",
+   "nombre": "Xiaomi Redmi Note 15 128GB",
+   "categoria": "telefonos",
+   "precio": 229,
+   "precioAntes": 269,
+   "etiqueta": "0% inicial",
+   "emoji": "📱",
+   "descripcion": "El rendimiento que buscas sin vaciar el bolsillo. Disponible con Cashea.",
+   "destacado": true,
+   "stock": {
+    "s1": 6,
+    "s2": 5,
+    "s3": 4,
+    "s4": 6,
+    "s5": 3
+   }
+  },
+  {
+   "id": "tecno-spark-30",
+   "nombre": "Tecno Spark 30 Pro 256GB",
+   "categoria": "telefonos",
+   "precio": 149,
+   "precioAntes": 179,
+   "etiqueta": "Cashea",
+   "emoji": "📱",
+   "descripcion": "Gran pantalla y 256GB de memoria. Ideal para estrenar.",
+   "destacado": false,
+   "stock": {
+    "s1": 5,
+    "s2": 4,
+    "s3": 6,
+    "s4": 2,
+    "s5": 4
+   }
+  },
+  {
+   "id": "honor-x9d",
+   "nombre": "Honor X9d 256GB",
+   "categoria": "telefonos",
+   "precio": 299,
+   "precioAntes": 0,
+   "etiqueta": "",
+   "emoji": "📱",
+   "descripcion": "Resistente, delgado y con carga rápida.",
+   "destacado": false,
+   "stock": {
+    "s1": 2,
+    "s2": 2,
+    "s3": 3,
+    "s4": 1,
+    "s5": 0
+   }
+  },
+  {
+   "id": "ps5-slim",
+   "nombre": "PlayStation 5 Slim + 2 controles",
+   "categoria": "gamer",
+   "precio": 529,
+   "precioAntes": 579,
+   "etiqueta": "Combo",
+   "emoji": "🎮",
+   "descripcion": "Consola lista para jugar con dos controles DualSense.",
+   "destacado": true,
+   "stock": {
+    "s1": 1,
+    "s2": 2,
+    "s3": 1,
+    "s4": 2,
+    "s5": 0
+   }
+  },
+  {
+   "id": "switch-2",
+   "nombre": "Nintendo Switch 2",
+   "categoria": "gamer",
+   "precio": 469,
+   "precioAntes": 0,
+   "etiqueta": "Nuevo",
+   "emoji": "🎮",
+   "descripcion": "Juega en casa o en la playa. Incluye base y joy-cons.",
+   "destacado": false,
+   "stock": {
+    "s1": 2,
+    "s2": 0,
+    "s3": 1,
+    "s4": 1,
+    "s5": 1
+   }
+  },
+  {
+   "id": "control-pro",
+   "nombre": "Control inalámbrico Pro",
+   "categoria": "gamer",
+   "precio": 39,
+   "precioAntes": 49,
+   "etiqueta": "-20%",
+   "emoji": "🕹️",
+   "descripcion": "Compatible con PC, consola y celular.",
+   "destacado": false,
+   "stock": {
+    "s1": 8,
+    "s2": 6,
+    "s3": 9,
+    "s4": 5,
+    "s5": 4
+   }
+  },
+  {
+   "id": "audifonos-gamer",
+   "nombre": "Audífonos gamer RGB 7.1",
+   "categoria": "gamer",
+   "precio": 35,
+   "precioAntes": 0,
+   "etiqueta": "",
+   "emoji": "🎧",
+   "descripcion": "Sonido envolvente y micrófono con cancelación de ruido.",
+   "destacado": false,
+   "stock": {
+    "s1": 6,
+    "s2": 5,
+    "s3": 7,
+    "s4": 4,
+    "s5": 3
+   }
+  },
+  {
+   "id": "airpods-pro",
+   "nombre": "AirPods Pro 3",
+   "categoria": "accesorios",
+   "precio": 229,
+   "precioAntes": 259,
+   "etiqueta": "-12%",
+   "emoji": "🎧",
+   "descripcion": "Cancelación activa de ruido y estuche MagSafe.",
+   "destacado": true,
+   "stock": {
+    "s1": 4,
+    "s2": 3,
+    "s3": 2,
+    "s4": 5,
+    "s5": 2
+   }
+  },
+  {
+   "id": "cargador-65w",
+   "nombre": "Cargador rápido 65W GaN",
+   "categoria": "accesorios",
+   "precio": 25,
+   "precioAntes": 32,
+   "etiqueta": "-22%",
+   "emoji": "🔌",
+   "descripcion": "Carga tu celular y laptop con un solo cargador.",
+   "destacado": false,
+   "stock": {
+    "s1": 12,
+    "s2": 10,
+    "s3": 9,
+    "s4": 11,
+    "s5": 8
+   }
+  },
+  {
+   "id": "forro-magsafe",
+   "nombre": "Forro MagSafe transparente",
+   "categoria": "accesorios",
+   "precio": 12,
+   "precioAntes": 0,
+   "etiqueta": "",
+   "emoji": "🛡️",
+   "descripcion": "Protección con estilo para tu teléfono.",
+   "destacado": false,
+   "stock": {
+    "s1": 20,
+    "s2": 15,
+    "s3": 18,
+    "s4": 16,
+    "s5": 10
+   }
+  },
+  {
+   "id": "camara-carro",
+   "nombre": "Cámara de reversa + pantalla",
+   "categoria": "carros",
+   "precio": 89,
+   "precioAntes": 109,
+   "etiqueta": "Instalación gratis",
+   "emoji": "🚗",
+   "descripcion": "Estaciona sin miedo. Pantalla de 7 pulgadas.",
+   "destacado": false,
+   "stock": {
+    "s1": 3,
+    "s2": 4,
+    "s3": 2,
+    "s4": 3,
+    "s5": 2
+   }
+  },
+  {
+   "id": "radio-carro",
+   "nombre": "Radio Android para carro 9\"",
+   "categoria": "carros",
+   "precio": 119,
+   "precioAntes": 0,
+   "etiqueta": "",
+   "emoji": "🚘",
+   "descripcion": "Bluetooth, GPS y espejo de pantalla del celular.",
+   "destacado": false,
+   "stock": {
+    "s1": 2,
+    "s2": 1,
+    "s3": 3,
+    "s4": 2,
+    "s5": 1
+   }
+  },
+  {
+   "id": "tensiometro",
+   "nombre": "Tensiómetro digital de brazo",
+   "categoria": "salud",
+   "precio": 29,
+   "precioAntes": 35,
+   "etiqueta": "-17%",
+   "emoji": "🩺",
+   "descripcion": "Mide tu presión en casa, con memoria de lecturas.",
+   "destacado": false,
+   "stock": {
+    "s1": 6,
+    "s2": 5,
+    "s3": 4,
+    "s4": 5,
+    "s5": 3
+   }
+  },
+  {
+   "id": "oxímetro",
+   "nombre": "Oxímetro de dedo",
+   "categoria": "salud",
+   "precio": 14,
+   "precioAntes": 0,
+   "etiqueta": "",
+   "emoji": "💙",
+   "descripcion": "Saturación y pulso en segundos.",
+   "destacado": false,
+   "stock": {
+    "s1": 9,
+    "s2": 8,
+    "s3": 7,
+    "s4": 10,
+    "s5": 6
+   }
+  }
+ ]
+}

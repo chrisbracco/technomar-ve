@@ -42,3 +42,33 @@ Servir de base para construir con Claude una **landing page tipo entrada de e-co
 - Repo **público** a propósito: el dueño lo conecta a Claude para generar la landing.
 - **No desplegar en Vercel** por ahora (decisión del dueño).
 - Sitio estático (HTML/CSS/JS) — sin backends ni APIs.
+
+---
+
+## Cómo correrlo (v1)
+
+Sitio 100% estático. El navegador bloquea `fetch` de JSON con doble clic, así que sírvelo localmente:
+
+```sh
+python3 -m http.server 8000   # y abre http://localhost:8000
+```
+
+- **Tienda:** `index.html` — catálogo, carrito, registro/login de usuario, checkout (delivery o retiro), ticket y "notificación interna" simulada.
+- **Panel del equipo:** `admin.html` — demo: `admin@technomar.ve` / `technomar2026`.
+  Resumen y ventas por sucursal, pedidos/tickets con flujo de estados (nuevo → confirmado → preparando → en camino / listo para retiro → entregado), cambio de sede, venta en mostrador, inventario por sede, clientes, ticket imprimible.
+- **Datos:** `data/productos.json` (productos, stock por sede, sucursales, zonas→sede). Todo es **de ejemplo**.
+
+## Reporte de validación v1
+
+| Pedido | Estado |
+|---|---|
+| Hero, promos, categorías (filtran), catálogo con buscador, sedes, prueba social (chat), pagos, CTA final | ✅ hecho |
+| Pedido con formulario + mensaje de WhatsApp armado | ✅ (carrito → checkout → botón WhatsApp) |
+| Notificación interna con disponibilidad por sede y zona del cliente | ✅ simulada en pantalla y en el feed del panel (se actualiza entre pestañas) |
+| Registro básico por usuario | ✅ nombre, teléfono, correo, clave, zona; "Mis pedidos" |
+| Tickets, delivery/retiro, administración de ventas por sucursal | ✅ panel `admin.html`; el stock se descuenta al **confirmar** y se devuelve al cancelar |
+| Móvil primero, botón flotante WhatsApp, barra inferior | ✅ |
+
+**Mockeado / pendiente fase 2:** cuentas, pedidos y stock editado viven solo en `localStorage` del navegador (no se comparten entre dispositivos); la clave se guarda con hash SHA-256 sin sal por usuario y el login de admin es solo una puerta visual — **no es seguridad real**; no hay pagos reales, ni notificación real al equipo (WhatsApp/push), ni fotos reales de producto (se usan emojis; el JSON admite campo `img`).
+
+**Por confirmar con el cliente:** direcciones de las sedes 3, 4 y 5, horarios, métodos de pago, precios/stock reales, y el número de WhatsApp (`wa.me/4121952897` sin código de país; se asumió `58`).
